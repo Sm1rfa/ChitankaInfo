@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ChitankaInfo.Statistics.Views.ReaderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChitankaInfo.Statistics.Views"
+             xmlns:viewModels="clr-namespace:ChitankaInfo.Statistics.ViewModels"
+             xmlns:statistics="clr-namespace:ChitankaInfo.Statistics"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="1090">
+
+    <UserControl.DataContext>
+        <viewModels:ReaderViewModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Button Content="Разгледай..." Click="btnOpenFile_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <Button x:Name="NextButton" Content="Следваща" Click="NextButton_Click" Margin="1011,498,10,27" />
+        <Button x:Name="PreviousButton" Content="Предишна" Click="PreviousButton_Click" Margin="10,498,1005,27" />
+        <WebBrowser x:Name="epubDisplay"  Margin="10,42,10,115" />
+        <Label Content="ВАЖНО: Могат да се четат книги само в разширение EPUB!" Foreground="Red" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" Width="340"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="ChitankaInfo.Statistics.Views.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChitankaInfo.Statistics.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="300">
+    <Grid>
+        <Label Content="Читанка.инфо" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Версия: 1.0.0" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Разработка:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="90,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119">
+            <Hyperlink Click="Hyperlink_OnClick">http://softcreative.biz</Hyperlink>
+        </TextBlock>
+        <Label Content="Контакт: stoyan@softcreative.biz" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image" Source="../Resources/images/SoftCreative.png" Margin="53,148,62,245"></Image>
+        <Label Content="Разработено за: chitanka.info" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image2" Source="../Resources/images/chitankaimage.png" Margin="34,346,43,29"></Image>
+    </Grid>
+</UserControl>
